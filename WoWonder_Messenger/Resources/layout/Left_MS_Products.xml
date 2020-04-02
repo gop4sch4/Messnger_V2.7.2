@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:id="@+id/main"
+    android:gravity="start">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/chat_rounded_left_layout"
+        android:id="@+id/bubble_layout"
+        android:padding="4dp"
+        android:paddingEnd="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+      <ImageView
+        android:id="@+id/imgDisplay"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:padding="0dp"
+        android:src="@drawable/imageplacholder"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="4dp" /> 
+        <TextView
+            android:id="@+id/name"
+            android:layout_marginEnd="13dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="?attr/colorAccent"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/title"
+            android:textColor="@color/secound_color"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp"
+            android:gravity="end"
+            android:text="xdfgsdfgdfg"
+            android:layout_marginBottom="6dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/cat"
+            android:textColor="@color/secound_color"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="13sp"
+            android:gravity="end"
+            android:text="Other"
+            android:layout_marginBottom="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/price"
+            android:textColor="#2E7D32"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="13sp"
+            android:gravity="end"
+            android:text="$100"
+            android:layout_marginBottom="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:textColor="@color/secound_color"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/time"
+            android:textSize="11sp"
+            android:layout_marginBottom="25dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentBottom="true"
+            android:padding="2dp"
+            android:gravity="end"
+            android:layout_marginEnd="10dp"
+            android:translationY="-5dp" />
+    </LinearLayout>
+</LinearLayout>

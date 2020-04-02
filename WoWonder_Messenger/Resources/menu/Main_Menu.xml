@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--For all properties see: http://developer.android.com/guide/topics/resources/menu-resource.html-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <item android:id="@+id/searchMainbutton"
+        android:title="@string/Lbl_Search"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_search_white_24dp" />
+
+  <item android:id="@+id/NearByMainButton"
+        android:title="@string/Lbl_NearBy"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_nearby" />
+
+  <item android:id="@+id/menue_Group"
+        android:title="@string/Lbl_NewGroup"
+        app:showAsAction="never"/>
+ 
+  <item android:id="@+id/menue_blockList"
+        android:title="@string/Lbl_Blocked_User_List"
+        app:showAsAction="never"/>
+
+  <item android:id="@+id/menue_Settings"
+        android:title="@string/Lbl_Settings"
+        app:showAsAction="never"/>
+  
+</menu>

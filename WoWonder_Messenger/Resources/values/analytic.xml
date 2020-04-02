@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <!--ADMOB-->
+  <string name="admob_app_id">ca-app-pub-5135691635931982~4077881706</string>
+  <string name="banner_ad_unit_id">ca-app-pub-5135691635931982/6776323500</string>
+  <string name="ad_attribution">Ad</string>
+  <!--===============================================================-->
+
+  <!--facebook ID-->
+  <string name="facebook_app_id">321814375273118</string>
+  <string name="fb_login_protocol_scheme">fb321814375273118</string>
+  <!--===============================================================-->
+
+  <!--google ID-->
+  <string name="google_key">AIzaSyB8sxTGq0otW44q3_XUYwBUVTu-YNqBW2Y</string>
+
+</resources>

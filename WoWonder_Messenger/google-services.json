@@ -1,0 +1,279 @@
+{
+  "project_info": {
+    "project_number": "730690624867",
+    "firebase_url": "https://project-badami.firebaseio.com",
+    "project_id": "project-badami",
+    "storage_bucket": "project-badami.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730690624867:android:b8c95f1ba58d7064e00756",
+        "android_client_info": {
+          "package_name": "id.go.bapendajabar.drivestore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPdVXv2nqYsHIlgziDM7Dw4r89J8hTayA"
+        },
+        {
+          "current_key": "AIzaSyB8sxTGq0otW44q3_XUYwBUVTu-YNqBW2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730690624867-m0ueb06bvu0bs9q4sn3l54nukco8vb27.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730690624867:android:6883f2af884f69c7e00756",
+        "android_client_info": {
+          "package_name": "id.go.bapendajabar.messenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730690624867-82mgcm4saeiao5nslja1nhckqs4hq02h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.go.bapendajabar.messenger",
+            "certificate_hash": "2089663af0d6be1adcd1f7b8fea5a00db8eab620"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPdVXv2nqYsHIlgziDM7Dw4r89J8hTayA"
+        },
+        {
+          "current_key": "AIzaSyB8sxTGq0otW44q3_XUYwBUVTu-YNqBW2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730690624867-m0ueb06bvu0bs9q4sn3l54nukco8vb27.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730690624867:android:7443bb08a5d05277e00756",
+        "android_client_info": {
+          "package_name": "id.go.bapendajabar.photo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPdVXv2nqYsHIlgziDM7Dw4r89J8hTayA"
+        },
+        {
+          "current_key": "AIzaSyB8sxTGq0otW44q3_XUYwBUVTu-YNqBW2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730690624867-m0ueb06bvu0bs9q4sn3l54nukco8vb27.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730690624867:android:dda9dc4f46be87fbe00756",
+        "android_client_info": {
+          "package_name": "id.go.bapendajabar.playtube"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPdVXv2nqYsHIlgziDM7Dw4r89J8hTayA"
+        },
+        {
+          "current_key": "AIzaSyB8sxTGq0otW44q3_XUYwBUVTu-YNqBW2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730690624867-m0ueb06bvu0bs9q4sn3l54nukco8vb27.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730690624867:android:1d76badbf2bca98be00756",
+        "android_client_info": {
+          "package_name": "id.go.bapendajabar.timeline"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPdVXv2nqYsHIlgziDM7Dw4r89J8hTayA"
+        },
+        {
+          "current_key": "AIzaSyB8sxTGq0otW44q3_XUYwBUVTu-YNqBW2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730690624867-m0ueb06bvu0bs9q4sn3l54nukco8vb27.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730690624867:android:d3a2e1cfe6d1e79ae00756",
+        "android_client_info": {
+          "package_name": "id.go.bapendajabar.weshare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730690624867-aqvrlg4l242p8vqfp03dklivsrntu37g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.go.bapendajabar.weshare",
+            "certificate_hash": "db45bff0257b96d45b3f0737f43f301043884737"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPdVXv2nqYsHIlgziDM7Dw4r89J8hTayA"
+        },
+        {
+          "current_key": "AIzaSyB8sxTGq0otW44q3_XUYwBUVTu-YNqBW2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730690624867-m0ueb06bvu0bs9q4sn3l54nukco8vb27.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730690624867:android:ddc140a7323bc7dfe00756",
+        "android_client_info": {
+          "package_name": "id.go.bapendajabarprov.badami"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730690624867-6s9g4l1ijf7p68rs02rboflv266u2s0g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.go.bapendajabarprov.badami",
+            "certificate_hash": "5c62e16bd516dd024dc4ccdb4329094be87c67a9"
+          }
+        },
+        {
+          "client_id": "730690624867-4atjgche92qoiccqg0e3co28at2bj559.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.go.bapendajabarprov.badami",
+            "certificate_hash": "016012b9100d746df3fef34d455f7a2ae386f2a0"
+          }
+        },
+        {
+          "client_id": "730690624867-asbkqcs6lttgf38kobdaptlcsdf5afce.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.go.bapendajabarprov.badami",
+            "certificate_hash": "6ac5eec8509233a1ee8fd805d5f1f33c0e8a27e0"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPdVXv2nqYsHIlgziDM7Dw4r89J8hTayA"
+        },
+        {
+          "current_key": "AIzaSyB8sxTGq0otW44q3_XUYwBUVTu-YNqBW2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730690624867-m0ueb06bvu0bs9q4sn3l54nukco8vb27.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730690624867:android:22925d24501b0be8e00756",
+        "android_client_info": {
+          "package_name": "im.badami.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730690624867-9tbbadfedjo3ldge0n5366p9uhhfof75.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "im.badami.app",
+            "certificate_hash": "db45bff0257b96d45b3f0737f43f301043884737"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPdVXv2nqYsHIlgziDM7Dw4r89J8hTayA"
+        },
+        {
+          "current_key": "AIzaSyB8sxTGq0otW44q3_XUYwBUVTu-YNqBW2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730690624867-m0ueb06bvu0bs9q4sn3l54nukco8vb27.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

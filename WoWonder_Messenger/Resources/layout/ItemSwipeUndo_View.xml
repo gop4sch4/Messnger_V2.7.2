@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:id="@+id/mainSwipe"
+    android:background="?attr/colorDivider"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/colorDivider" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="15dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <View
+            android:layout_width="15dp"
+            android:layout_height="wrap_content" />
+        <at.markushi.ui.CircleButton
+            android:id="@+id/moreButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:padding="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center_vertical"
+            app:cb_color="?attr/colorPrimary"
+            android:tint="?attr/colorHint"
+            app:cb_pressedRingWidth="5dip"
+            android:src="@drawable/ic_action_menu" />
+        <at.markushi.ui.CircleButton
+            android:id="@+id/callButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:padding="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center_vertical"
+            app:cb_color="?attr/colorPrimary"
+            app:cb_pressedRingWidth="5dip"
+            android:src="@android:drawable/ic_menu_call" />
+        <at.markushi.ui.CircleButton
+            android:id="@+id/deleteButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:padding="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center_vertical"
+            app:cb_color="?attr/colorAccent"
+            app:cb_pressedRingWidth="5dip"
+            android:src="@drawable/ic_action_delete" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/colorDivider" />
+</LinearLayout>

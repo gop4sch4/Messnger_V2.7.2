@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentTop="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--Friends Request Section-->
+            <RelativeLayout
+                android:id="@+id/layout_friend_Request"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:background="?attr/selectableItemBackground"
+                
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp">
+                <RelativeLayout
+                    android:layout_toEndOf="@+id/layout_user_pages"
+                    android:id="@+id/layout_Friends_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true">
+                    <TextView
+                        android:id="@+id/tv_Friends_connection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Lbl_FriendRequest"
+                        android:textSize="@dimen/msg_text_primary" />
+                    <TextView
+                        android:id="@+id/tv_Friends"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_below="@+id/tv_Friends_connection"
+                        android:text="@string/Lbl_View_All_FriendRequest"
+                        android:textSize="@dimen/msg_text_secondary"
+                        android:textColor="#d2d2d2" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/layout_user_pages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="12dp">
+                    <ImageView
+                        android:id="@+id/image_page_1"
+                        android:scaleType="centerCrop"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/imageplacholder_circle"
+                        android:layout_toEndOf="@+id/image_page_2"
+                        android:padding="5dp" />
+                    <ImageView
+                        android:id="@+id/image_page_2"
+                        android:scaleType="centerCrop"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="-30dp"
+                        android:src="@drawable/imageplacholder_circle"
+                        android:layout_toEndOf="@+id/image_page_3"
+                        android:padding="5dp" />
+                    <ImageView
+                        android:id="@+id/image_page_3"
+                        android:scaleType="centerCrop"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="-30dp"
+                        android:src="@drawable/imageplacholder_circle"
+                        android:padding="5dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyler"
+                android:clickable="true"
+                android:focusable="false"
+                android:paddingStart="8dp"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+            <ViewStub
+                android:id="@+id/viewStub"
+                android:inflatedId="@+id/subView"
+                android:layout_marginTop="35dp"
+                android:layout_centerInParent="true"
+                android:layout="@layout/EmptyStateLayout"
+                android:layout_width="match_parent"
+                android:layout_height="350dp" />
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout> 

@@ -1,0 +1,643 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+  <style name="SplashScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!--drawable/splashscreen >> from image | drawable/splash From xml logo -->
+    <!--<item name="android:windowBackground">@drawable/splashscreen</item>-->
+    <item name="android:windowBackground">@drawable/splash</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowActionBar">true</item>
+  </style>
+
+
+  <style name="MyTheme" parent="MyTheme.Base"> </style>
+
+  <style name="MyTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="android:windowActivityTransitions">true</item>
+    <item name="android:forceDarkAllowed">true</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="colorPrimary">#FFFAFA</item>
+    <item name="colorAccent">@color/accent</item>
+    <item name="colorPrimaryDark">@color/primaryDark</item>
+    <item name="preferenceTheme">@style/SettingsTheme</item>
+    <item name="android:textColor">#444444</item>
+    <item name="android:textColorSecondary">#8888</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:logo">@mipmap/icon</item>
+    <item name="android:alertDialogTheme">@style/AlertDialogCustom</item>
+    <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
+    <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    <item name="android:textViewStyle">@style/AppTextView</item>
+    <item name="colorReact">#F8F8F7</item>
+    <item name="colorHint">#282828</item>
+    <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+    <item name="colorBubble">#efefef</item>
+    <item name="colorDivider">#efefef</item>
+    <item name="android:fontFamily">@font/wowonder</item>
+    <item name="fontFamily">@font/wowonder</item>
+    <item name="ShapeCircleColor1">#00E2E2E2</item>
+    <item name="ShapeCircleColor2">#05E2E2E2</item>
+    <item name="ShapeCircleColor3">#0aE2E2E2</item>
+    <item name="ShapeCircleColor4">#0fE2E2E2</item>
+    <item name="ShapeCircleColor5">#14E2E2E2</item>
+    <item name="ShapeCircleColor6">#ffffff</item>
+  </style>
+
+  <style name="MyTheme_Dark.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="android:windowActivityTransitions">true</item>
+    <item name="android:forceDarkAllowed">true</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="colorPrimary">#444444</item>
+    <item name="colorAccent">@color/accent</item>
+    <item name="colorPrimaryDark">@color/primaryDark</item>
+    <item name="preferenceTheme">@style/SettingsThemeDark</item>
+    <item name="android:textColor">@color/text_color_light</item>
+    <item name="android:textColorSecondary">#efefef</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:logo">@mipmap/icon</item>
+    <item name="android:alertDialogTheme">@style/AlertDialogCustomDark</item>
+    <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
+    <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    <item name="android:textViewStyle">@style/AppTextView</item>
+    <item name="colorReact">#282828</item>
+    <item name="colorHint">#efefef</item>
+    <item name="android:popupMenuStyle">@style/CustomPopupThemeDark</item>
+    <item name="colorBubble">#363636</item>
+    <item name="colorDivider">#333333</item>
+    <item name="android:fontFamily">@font/wowonder</item>
+    <item name="fontFamily">@font/wowonder</item>
+    <item name="ShapeCircleColor1">#00232323</item>
+    <item name="ShapeCircleColor2">#05232323</item>
+    <item name="ShapeCircleColor3">#0a232323</item>
+    <item name="ShapeCircleColor4">#0f232323</item>
+    <item name="ShapeCircleColor5">#14232323</item>
+    <item name="ShapeCircleColor6">#000000</item>
+  </style>
+ 
+  <style name="TransparentBlack" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@color/transparentDark</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="android:colorBackgroundCacheHint">@null</item>
+  </style>
+
+  <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+    <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    <!-- switch on thumb & track color -->
+    <item name="colorControlActivated">@color/accent</item>
+    <!-- switch off thumb color -->
+    <item name="colorSwitchThumbNormal">#efefef</item>
+    <item name="thumbTint">@color/accent</item>
+    <!-- switch off track color -->
+    <item name="android:colorForeground">#efefef</item>
+    <item name="trackTint">#444</item>
+  </style>
+
+  <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+    <item name="android:background">@drawable/rounded_dialog</item>
+  </style>
+
+  <style name="SettingsTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+    <!--<item name="colorPrimary">@color/text_color_light</item>-->
+    <item name="colorPrimary">@color/primary</item>
+    <item name="colorAccent">@color/accent</item>
+    <item name="colorPrimaryDark">@color/primaryDark</item>
+    <item name="android:textColor">#444444</item>
+    <item name="android:textColorSecondary">#888</item>
+    <item name="android:textSize">16sp</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+    <item name="android:alertDialogTheme">@style/AlertDialogCustom</item> 
+  </style>
+
+  <style name="SettingsThemeDark" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+    <!--<item name="colorPrimary">#444444</item>-->
+    <item name="colorPrimary">@color/primary</item>
+    <item name="colorAccent">@color/accent</item>
+    <item name="colorPrimaryDark">@color/primaryDark</item>
+    <item name="android:textColor">@color/text_color_light</item>
+    <item name="android:textColorSecondary">#efefef</item>
+    <item name="android:textSize">16sp</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+    <item name="android:editTextPreferenceStyle">@style/PopupMenuStyle</item>
+    <item name="android:alertDialogTheme">@style/AlertDialogCustomDark</item>
+  </style>
+  
+  <style name="MenuTextStyle">
+    <item name="android:textColor">@color/text_color_light</item>
+    <item name="android:textSize">13sp</item>
+  </style>
+
+  <style name="ProfileTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="android:windowTranslucentNavigation">true</item>
+    <item name="colorPrimary">#9E000000</item>
+    <item name="colorPrimaryDark">#000000</item>
+    <item name="colorAccent">@color/accent</item>
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    <item name="android:statusBarColor">#000000</item>
+    <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    <item name="android:windowTranslucentStatus">true</item>
+  </style>
+  <style name="ProfileTheme.NoActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    <item name="android:windowDrawsSystemBarBackgrounds" >true</item>
+    <item name="android:windowTranslucentStatus">true</item>
+  </style>
+  <style name="tab_style_ProfileTheme" parent="TextAppearance.Design.Tab">
+    <item name="textAllCaps">false</item>
+    <item name="android:textSize">13sp</item>
+  </style>
+
+  <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+    <item name="android:textSize">16sp</item>
+  </style>
+
+  <style name="MyTimePickerDialogTheme" parent="@style/Theme.AppCompat.Light.Dialog">
+    <item name="android:textColor">@color/accent</item>
+    <item name="colorAccent">@color/accent</item>
+  </style>
+
+  <style name="SwitchCompatTheme" parent="Preference.SwitchPreferenceCompat.Material">
+    <item name="colorControlNormal">#efefef</item>
+    <!-- switch on thumb & track color -->
+    <item name="colorControlActivated">#efefef</item>
+
+    <!-- switch off thumb color -->
+    <item name="colorSwitchThumbNormal">#efefef</item>
+
+    <item name="thumbTint">#efefef</item>
+
+    <!-- switch off track color -->
+    <item name="android:colorForeground">#efefef</item>
+
+    <item name="trackTint">#efefef</item>
+
+  </style>
+
+  <style name="SwitchCompatThemeActivated" parent="Preference.SwitchPreferenceCompat.Material">
+    <item name="colorControlNormal">#efefef</item>
+    <!-- switch on thumb & track color -->
+    <item name="colorControlActivated">@color/accent</item>
+
+    <!-- switch off thumb color -->
+    <item name="colorSwitchThumbNormal">#efefef</item>
+
+    <item name="thumbTint">@color/accent</item>
+
+    <!-- switch off track color -->
+    <item name="android:colorForeground">#efefef</item>
+
+    <item name="trackTint">#444</item>
+
+  </style>
+
+
+  <style name="ToolbarTitleTheme" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+    <item name="android:textSize">16dp</item>
+  </style>
+
+  <style name="ToolbarSubtitleTheme" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+    <item name="android:textSize">11dp</item>
+  </style>
+
+  <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <!--buttons-->
+    <item name="colorPrimary">@color/text_color_light</item>
+    <item name="colorAccent">@color/accent</item>
+    <item name="colorPrimaryDark">@color/primaryDark</item>
+    <!--title-->
+    <item name="android:textColor">#444444</item>
+    <item name="android:textColorHint">#444444</item>
+    <!--text-->
+    <!--<item name="android:textColorPrimary">#444444</item>--> 
+    <item name="android:textColorAlertDialogListItem">#444444</item>
+    <item name="textColorAlertDialogListItem">#444444</item>
+    <!--selection list-->
+    <item name="android:textColorTertiary">#444444</item>
+    <!--background-->
+    <item name="android:background">#efefef</item>
+  </style>
+
+  <style name="AlertDialogCustomDark" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <!--buttons-->
+    <item name="colorPrimary">#444444</item>
+    <item name="colorAccent">@color/accent</item>
+    <item name="colorPrimaryDark">@color/primaryDark</item> 
+    <!--title-->
+    <item name="android:textColor">@color/text_color_light</item>
+    <item name="android:textColorHint">@color/text_color_light</item> 
+    <!--text-->
+    <!--<item name="android:textColorPrimary">#fafafa</item>--> 
+    <item name="android:textColorAlertDialogListItem">@color/text_color_light</item>
+    <item name="textColorAlertDialogListItem">@color/text_color_light</item>
+    <!--selection list-->
+    <item name="android:textColorTertiary">#fafafa</item>
+    <!--background-->
+    <item name="android:background">#444444</item>
+  </style>
+
+  <style name="MyApp.DialogButton" parent="@android:style/TextAppearance.Material.Button">
+    <item name="android:textColor">@color/text_color_light</item>
+    <!--<item name="android:background">transparent</item>-->
+  </style>
+
+  <style name="Widget.CardContent" parent="android:Widget">
+    <item name="android:paddingStart">16dp</item>
+    <item name="android:paddingEnd">16dp</item>
+    <item name="android:paddingTop">24dp</item>
+    <item name="android:paddingBottom">24dp</item>
+    <item name="android:orientation">vertical</item>
+  </style>
+
+  <style name="CustomPopupTheme" parent="ThemeOverlay.AppCompat.Dark">
+    <!-- if using android.widget.PopupMenu -->
+    <item name="android:popupMenuStyle">@style/PopupMenu</item>
+    <!-- if using android.support.v7.widget.PopupMenu -->
+    <item name="popupMenuStyle">@style/PopupMenu</item>
+  </style>
+
+  <style name="PopupMenuStyle" parent="Theme.AppCompat.Light">
+    <item name="android:background">#444</item>
+    <item name="android:textColor">@color/text_color_light</item>
+  </style>
+
+  <style name="PopupMenu" parent="Theme.AppCompat.Light">
+    <item name="android:background">#444</item>
+    <item name="android:textColor">@color/text_color_light</item>
+    <item name="android:popupBackground">@android:color/black</item>
+  </style>
+
+  <style name="CustomPopupThemeDark" parent="ThemeOverlay.AppCompat.Dark">
+    <!-- if using android.widget.PopupMenu -->
+    <item name="android:popupMenuStyle">@style/PopupMenuDark</item>
+    <!-- if using android.support.v7.widget.PopupMenu -->
+    <item name="popupMenuStyle">@style/PopupMenuDark</item>
+  </style>
+  
+  <style name="PopupMenuDark" parent="Theme.AppCompat.Light">
+    <item name="android:background">@color/text_color_light</item>
+    <item name="android:textColor">#444</item>
+    <item name="android:popupBackground">@color/text_color_light</item>
+  </style>
+ 
+  <style name="dialog_animation">
+    <item name="android:windowEnterAnimation">@anim/slide_up</item>
+    <item name="android:windowExitAnimation">@anim/slide_right</item>
+  </style>
+
+  <style name="videoMeneStyle" parent="Widget.AppCompat.PopupMenu">
+    <item name="android:textColor">#4ca5ff</item>
+    <item name="android:itemBackground">@color/text_color_light</item>
+  </style>
+
+  <style name="TextAppearance.MyApp.Title.Collapsed" parent="android:TextAppearance">
+    <item name="android:textColor">@color/text_color_light</item>
+    <item name="android:textSize">16sp</item>
+  </style>
+
+  <style name="TextAppearance.MyApp.Title.Expanded" parent="android:TextAppearance">
+    <item name="android:textColor">@android:color/transparent</item>
+    <item name="android:textSize">12sp</item>
+  </style>
+
+  <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+    <item name="colorControlNormal">#888</item>
+    <item name="actionMenuTextColor">#888</item>
+    <item name="android:textColor">#444</item>
+  </style>
+
+  <style name="AppTextView" parent="BaseAppTextView">
+    <item name="android:hyphenationFrequency">none</item>
+  </style>
+
+  <style name="BaseAppTextView" parent="android:Widget.TextView"/>
+ 
+  <style name="EditTextNormalStyle">
+    <item name="android:textColor">#444</item>
+    <item name="android:textColorHint">#8f8f8f</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:layout_gravity">start</item>
+    <item name="android:paddingStart">15dp</item>
+    <item name="android:textAlignment">viewStart</item>
+    <item name="android:gravity">center_vertical</item>
+  </style>
+
+  <style name="SearchViewTheme" parent="Widget.AppCompat.Light.SearchView">
+    <item name="android:textColorHint">@color/text_color_light</item>
+  </style>
+
+  <style name="MyDialogTheme" parent="android:Theme.Dialog">
+    <!-- Fill the screen -->
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">fill_parent</item>
+
+    <!-- No backgrounds, titles or window float -->
+    <item name="android:windowBackground">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">false</item>
+
+    <!-- Just to prove it's working -->
+    <item name="android:background">#f7f7f7</item>
+  </style>
+
+  <style name="MySeekBar" parent="Theme.AppCompat.Light">
+    <item name="android:colorControlNormal">#cccccc</item>
+    <item name="android:progressBackgroundTint">#cccccc</item>
+    <item name="android:progressTint">@color/primaryDark</item>
+    <item name="android:colorControlActivated">@color/accent</item>
+  </style>
+
+
+
+  <style name="TranslucenActivty" parent="TranslucenActivty.Base"> </style>
+  <style name="TranslucenActivty.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="android:windowTranslucentStatus">true</item>
+    <item name="android:windowTranslucentNavigation">true</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="colorPrimary">@color/accent</item>
+    <item name="colorAccent">@color/accent</item>
+    <item name="android:textColor">@color/text_color_light</item>
+    <item name="android:textSize">18sp</item>
+  </style>
+
+
+  <style name="Chatththemeb582af" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#b582af</item>
+    <item name="colorAccent">#b582af</item>
+    <item name="colorPrimaryDark">#b582af</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+     <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+ </style>
+
+  <style name="Chatththemea84849" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#a84849</item>
+    <item name="colorAccent">#a84849</item>
+    <item name="colorPrimaryDark">#a84849</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+     <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+ </style>
+
+  <style name="Chatththemef9c270" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#f9c270</item>
+    <item name="colorAccent">#f9c270</item>
+    <item name="colorPrimaryDark">#f9c270</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+     <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+ </style>
+
+  <style name="Chatththeme70a0e0"
+         parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#70a0e0</item>
+    <item name="colorAccent">#70a0e0</item>
+    <item name="colorPrimaryDark">#70a0e0</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+     <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+ </style>
+
+  <style name="Chatththeme56c4c5"
+         parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#56c4c5</item>
+    <item name="colorAccent">#56c4c5</item>
+    <item name="colorPrimaryDark">#56c4c5</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+     <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+ </style>
+
+  <style name="Chatththemef33d4c"
+         parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#f33d4c</item>
+    <item name="colorAccent">#f33d4c</item>
+    <item name="colorPrimaryDark">#f33d4c</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+     <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+ </style>
+
+  <style name="Chatththemea1ce79"
+         parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#a1ce79</item>
+    <item name="colorAccent">#a1ce79</item>
+    <item name="colorPrimaryDark">#a1ce79</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+     <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+ </style>
+
+  <style name="Chatththemea085e2"
+         parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#a085e2</item>
+    <item name="colorAccent">#a085e2</item>
+    <item name="colorPrimaryDark">#a085e2</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+     <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+ </style>
+
+  <style name="Chatththemeed9e6a"
+         parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#ed9e6a</item>
+    <item name="colorAccent">#ed9e6a</item>
+    <item name="colorPrimaryDark">#ed9e6a</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+    <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+  </style>
+
+  <style name="Chatththeme2b87ce"
+         parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#2b87ce</item>
+    <item name="colorAccent">#2b87ce</item>
+    <item name="colorPrimaryDark">#2b87ce</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+     <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+ </style>
+
+  <style name="Chatththemef2812b"
+         parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#f2812b</item>
+    <item name="colorAccent">#f2812b</item>
+    <item name="colorPrimaryDark">#f2812b</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+     <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+ </style>
+
+  <style name="Chatththeme0ba05d"
+         parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#0ba05d</item>
+    <item name="colorAccent">#0ba05d</item>
+    <item name="colorPrimaryDark">#0ba05d</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+     <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+ </style>
+
+  <style name="Chatththeme0e71ea"
+         parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#0e71ea</item>
+    <item name="colorAccent">#0e71ea</item>
+    <item name="colorPrimaryDark">#0e71ea</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+    <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+  </style>
+
+  <style name="Chatththemeaa2294"
+         parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#aa2294</item>
+    <item name="colorAccent">#aa2294</item>
+    <item name="colorPrimaryDark">#aa2294</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+    <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+  </style>
+
+
+  <style name="Chatththemef9a722"
+         parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#f9a722</item>
+    <item name="colorAccent">#f9a722</item>
+    <item name="colorPrimaryDark">#f9a722</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+    <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+  </style>
+
+  <style name="Chatththeme008484"
+         parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#008484</item>
+    <item name="colorAccent">#008484</item>
+    <item name="colorPrimaryDark">#008484</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+     <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+ </style>
+
+
+  <style name="Chatththeme5462a5"
+         parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#5462a5</item>
+    <item name="colorAccent">#5462a5</item>
+    <item name="colorPrimaryDark">#5462a5</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+     <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+ </style>
+
+
+  <style name="Chatththemefc9cde"
+         parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#fc9cde</item>
+    <item name="colorAccent">#fc9cde</item>
+    <item name="colorPrimaryDark">#fc9cde</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+     <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+ </style>
+
+  <style name="Chatththeme51bcbc" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#51bcbc</item>
+    <item name="colorAccent">#51bcbc</item>
+    <item name="colorPrimaryDark">#51bcbc</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+    <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+  </style>
+
+
+  <style name="Chatththemec9605e" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#c9605e</item>
+    <item name="colorAccent">#c9605e</item>
+    <item name="colorPrimaryDark">#c9605e</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+     <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+ </style>
+
+  <style name="Chatththeme01a5a5" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#01a5a5</item>
+    <item name="colorAccent">#01a5a5</item>
+    <item name="colorPrimaryDark">#01a5a5</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+  </style>
+
+  <style name="Chatththeme056bba" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#056bba</item>
+    <item name="colorAccent">#056bba</item>
+    <item name="colorPrimaryDark">#056bba</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+     <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+ </style>
+
+  <style name="Chatththeme8ec96c" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#8ec96c</item>
+    <item name="colorAccent">#8ec96c</item>
+    <item name="colorPrimaryDark">#8ec96c</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+     <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+ </style>
+
+  <style name="Chatththeme609b41"
+         parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#609b41</item>
+    <item name="colorAccent">#609b41</item>
+    <item name="colorPrimaryDark">#609b41</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+     <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+ </style>
+
+
+  <style name="Chatththemeff72d2"
+         parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#ff72d2</item>
+    <item name="colorAccent">#ff72d2</item>
+    <item name="colorPrimaryDark">#ff72d2</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+    <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+  </style>
+
+  <style name="Chatththemedefault" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">@color/accent</item>
+    <item name="colorAccent">@color/accent</item>
+    <item name="colorPrimaryDark">@color/primaryDark</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">true</item>
+    <item name="android:popupMenuStyle">@style/CustomPopupTheme</item>
+  </style>
+
+  <style name="MyTheme.AdAttribution">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_gravity">left</item>
+    <item name="android:textColor">@color/text_color_light</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:text">@string/ad_attribution</item>
+    <item name="android:background">#FFCC66</item>
+    <item name="android:width">15dp</item>
+    <item name="android:height">15dp</item>
+  </style>
+
+</resources> 

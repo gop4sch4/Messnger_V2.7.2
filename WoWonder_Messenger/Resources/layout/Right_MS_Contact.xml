@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:gravity="end"
+    android:padding="4dp"
+    android:id="@+id/main"
+    android:paddingEnd="2dp">
+    <LinearLayout
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="3dp"
+        android:gravity="end|center"
+        android:layout_gravity="end|center"
+        android:background="@drawable/chat_rounded_right_layout"
+        android:id="@+id/bubble_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp">
+        <refractored.controls.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_marginStart="8dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/text_color_light"
+            android:layout_weight="2"
+            android:src="@drawable/no_profile_image" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center_vertical"
+            android:layout_weight="2"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactName"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/text_color_light"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/numberText"
+                android:layout_weight="2"
+                android:textColor="@color/text_color_light"
+                android:textSize="12dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="3dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seen"
+            android:layout_weight="1"
+            android:text="IC" 
+            android:textColor="@color/text_color_light"
+            android:textSize="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp" />
+    </LinearLayout>
+  <TextView
+    android:layout_height="match_parent"
+    android:id="@+id/time"
+    android:textColor="#444"
+    android:textSize="13dp"
+    android:visibility="gone"
+    android:gravity="bottom|end"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="3dp" 
+    android:layout_marginStart="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_width="wrap_content" 
+    android:translationX="0dp"
+    android:paddingBottom="2dp" />
+</LinearLayout>
